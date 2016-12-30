@@ -1,0 +1,2 @@
+如果使用eclipse进行编译的话，请加入Goals参数：clean assembly:assembly
+clean assembly:assembly
