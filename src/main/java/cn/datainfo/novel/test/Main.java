@@ -14,13 +14,13 @@ public class Main
 {
     public static void main( String[] args )
     {
-        CrawlerFactory cf = CrawlerFactory.getInstance();
-        Crawler crawler = cf.getCrawler("83k");
-        
         // 建立book信息
         Book book = new Book();
         book.setName("娱乐宗师");
-        book.setUrl("http://www.83kxs.com/View/14/14562/index.html");//目录地址
+        book.setUrl("http://www.miaobige.com/read/7144/");//目录地址
+        
+        CrawlerFactory cf = CrawlerFactory.getInstance();
+        Crawler crawler = cf.getCrawler("miaobige");
         List<Section> sections = crawler.getSectionList(book);
         for (Section section : sections) {
         	//System.out.println("id:"+section.getId()+" name:" + section.getName() + " url:" + section.getUrl());

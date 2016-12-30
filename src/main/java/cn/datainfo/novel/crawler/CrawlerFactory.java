@@ -23,7 +23,11 @@ public class CrawlerFactory {
 		}
 		if (crawlerType.equals("83k")) {
 			return new Host83KCrawler();
-		}		
+		}
+		if (crawlerType.equals("miaobige")) {
+			return new MiaobigeCrawler();
+		}
+		
 		
 		return null;
 	}
